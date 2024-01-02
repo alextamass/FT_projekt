@@ -1,0 +1,21 @@
+{
+  "category" : [
+  {
+    "name": "Breakfast",
+    "slug": "breakfast",
+    "id": 1
+  },
+  {
+    "name": "Lunch",
+    "slug": "lunch",
+    "id": 2
+
+
+  },
+  {
+    "name": "Dinner",
+    "slug": "dinner",
+    "id": 3
+  }
+]
+}
