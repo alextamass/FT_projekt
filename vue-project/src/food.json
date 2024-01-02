@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "prazenica",
+        "category": "breakfast",
+        "image": "https://www.donaskakvetovpoprad.sk/fotky49660/fotos/_vyr_482_1000-1000-ruza-cervena-stopka-2.jpg",
+        "price": 18
+    },
+    {
+        "id": 2,
+        "name": "pancakes",
+        "category": "dinner",
+        "image": "https://www.donaskakvetovpoprad.sk/fotky49660/fotos/_vyr_482_1000-1000-ruza-cervena-stopka-2.jpg",
+        "price": 4
+    },
+    {
+        "id": 2,
+        "name": "dwadawjdawod",
+        "category": "lunch",
+        "image": "https://www.donaskakvetovpoprad.sk/fotky49660/fotos/_vyr_482_1000-1000-ruza-cervena-stopka-2.jpg",
+        "price": 4
+    }
+
+]
