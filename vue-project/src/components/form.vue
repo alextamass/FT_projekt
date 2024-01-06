@@ -1,7 +1,6 @@
 <template>
   <div class="order-form">
     <div class="container">
-      <h2>Place Your Order</h2>
       <form @submit.prevent="submitOrder">
         <div class="form-group">
           <label for="name">Your Name:</label>
@@ -14,8 +13,8 @@
         </div>
 
         <div class="form-group">
-          <label for="orderDetails">Order Details:</label>
-          <textarea id="orderDetails" v-model="orderDetails" required></textarea>
+          <label for="address">Address:</label>
+          <textarea id="address" v-model="address" required></textarea>
         </div>
 
         <div class="form-group">
@@ -32,7 +31,7 @@ export default {
     return {
       customerName: '',
       contactNumber: '',
-      orderDetails: '',
+      address: '',
     };
   },
   methods: {
@@ -40,7 +39,7 @@ export default {
       console.log('Order submitted:', {
         customerName: this.customerName,
         contactNumber: this.contactNumber,
-        orderDetails: this.orderDetails,
+        address: this.address,
       });
     },
   },

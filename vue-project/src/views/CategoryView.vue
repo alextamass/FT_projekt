@@ -5,7 +5,7 @@
       <h2>{{ food.name }}</h2>
       <img :src="food.image" :alt="food.name" style="width: 35%;">
       <h3>Price: {{ food.price }}</h3>
-       <router-link to="/OrderFormView" tag="button">
+       <router-link :to="{ name: 'order', params: { dishName: food.name, price: food.price } }" tag="button">
          Place Order
        </router-link>
     </div>

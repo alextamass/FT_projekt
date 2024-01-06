@@ -1,7 +1,9 @@
 
 <template>
   <div>
-    <OrderForm />
+    <h2 style="text-align: center">Place Your Order for {{dishName}}</h2>
+    <h2 style="text-align: center">Total : {{price}} €</h2>
+    <OrderForm/>
   </div>
 </template>
 
@@ -12,5 +14,8 @@ export default {
   components: {
     OrderForm,
   },
+  props: ['dishName', 'price'],
+
 };
 </script>
+

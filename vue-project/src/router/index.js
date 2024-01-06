@@ -19,11 +19,10 @@ const router = createRouter({
 
     },
     {
-      path: '/OrderFormView',
+      path: "/order/:dishName/:price",
       name: 'order',
       component: OrderFormView,
       props: true,
-
     },
   ]
 })
