@@ -1,17 +1,22 @@
 <template>
-  <header>
-        <navigation/>
-  </header>
+    <div class="navigation">
+      <navigation/>
+    </div>
+    <head/>
   <RouterView />
-  
+  <footer>
+    <foot/>
+  </footer>
 </template>
 
 <script>
 import { RouterView } from 'vue-router'
 import navigation from "@/components/navigation.vue";
+import foot from "@/components/footer.vue"
 export default{
   components:{
     navigation,
+    foot,
   }
 }
 </script>
@@ -27,7 +32,7 @@ header {
   margin: 0 auto 2rem;
 }
 
-nav {
+navigation {
   width: 100%;
   font-size: 12px;
   text-align: center;
