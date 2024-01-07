@@ -18,7 +18,12 @@
         </div>
 
         <div class="form-group">
-          <button type="submit">Place Order</button>
+          <router-link v-if="isFormFilled" to="/orderplaced" tag="button" type="submit">
+            Place Order
+          </router-link>
+          <button v-else type="button" disabled>
+            Fill in all fields
+          </button>
         </div>
       </form>
     </div>
@@ -34,13 +39,20 @@ export default {
       address: '',
     };
   },
+  computed: {
+    isFormFilled() {
+      return this.customerName && this.contactNumber && this.address;
+    },
+  },
   methods: {
     submitOrder() {
-      console.log('Order submitted:', {
-        customerName: this.customerName,
-        contactNumber: this.contactNumber,
-        address: this.address,
-      });
+      if (this.isFormFilled) {
+        console.log('Order submitted:', {
+          customerName: this.customerName,
+          contactNumber: this.contactNumber,
+          address: this.address,
+        });
+      }
     },
   },
 };

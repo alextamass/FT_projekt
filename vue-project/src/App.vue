@@ -1,20 +1,25 @@
 <template>
+  <div id="app">
     <div class="navigation">
       <navigation/>
     </div>
-    <head/>
-  <RouterView />
-  <footer>
-    <foot/>
-  </footer>
+    <Head/>
+    <RouterView />
+    </div>
+    <footer>
+      <foot/>
+    </footer>
+
 </template>
 
 <script>
 import { RouterView } from 'vue-router'
 import navigation from "@/components/navigation.vue";
 import foot from "@/components/footer.vue"
+import Head from "@/components/header.vue";
 export default{
   components:{
+    Head,
     navigation,
     foot,
   }
@@ -82,5 +87,16 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+  #app {
+  background: url('https://t4.ftcdn.net/jpg/03/47/83/55/240_F_347835560_LgrrNmUnKa2DaiYcHHNwCK0IBqgyqMU2.jpg') center/cover;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
 }
 </style>
