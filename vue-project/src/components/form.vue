@@ -25,6 +25,9 @@
             Fill in all fields
           </button>
         </div>
+        <router-link to="/" tag="button">
+          Cancel Order
+        </router-link>
       </form>
     </div>
   </div>
