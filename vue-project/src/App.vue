@@ -9,10 +9,10 @@
       </div>
       <RouterView />
     </div>
-    <footer>
-      <foot />
-    </footer>
   </div>
+  <footer>
+    <foot />
+  </footer>
 </template>
 
 <script>

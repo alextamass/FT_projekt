@@ -10,7 +10,7 @@
         "id": 2,
         "name": "Mayak",
         "category": "dinner",
-        "image": "https://dobruchut.aktuality.sk/recept/fotogaleria/78165/korejske-vajicka-mayak/1/",
+        "image": "https://www.nonguiltypleasures.com/wp-content/uploads/2023/05/mayak-eggs-square-500x375.jpg",
         "price": 5.99
     },
     {
@@ -26,6 +26,40 @@
         "category": "breakfast",
         "image": "https://cdn.vilgain.com/image/recipe-content/content-desktop/aeb5512c-8358-446e-9466-0ceab2f7cd26?v=1593032875",
         "price": 7.99
+    },
+    {
+        "id": 5,
+        "name": "Pad Thai",
+        "category": "dinner",
+        "image": "https://www.noracooks.com/wp-content/uploads/2023/01/30MinuteVeganPadThai-5-2.jpg",
+        "price": 9.99
+    },
+    {
+        "id": 6,
+        "name": "Sushi Platter",
+        "category": "dinner",
+        "image": "https://139252789.cdn6.editmysite.com/uploads/1/3/9/2/139252789/s215045893415348816_p404_i1_w1293.jpeg",
+        "price": 12.99
+    },
+    {
+        "id": 7,
+        "name": "Chicken Teriyaki Bowl",
+        "category": "lunch",
+        "image": "https://modernmealmakeover.com/wp-content/uploads/2020/10/IMG_6548-4.jpg",
+        "price": 8.99
+    },
+    {
+        "id": 8,
+        "name": "Kimchi Fried Rice",
+        "category": "breakfast",
+        "image": "https://www.recipetineats.com/wp-content/uploads/2021/03/Kimchi-Fried-Rice-Skillet.jpg",
+        "price": 6.99
+    },
+    {
+        "id": 9,
+        "name": "Miso Soup",
+        "category": "breakfast",
+        "image": "https://www.gimmesomeoven.com/wp-content/uploads/2016/01/Miso-Soup-Recipe-9.jpg",
+        "price": 4.99
     }
-
 ]
