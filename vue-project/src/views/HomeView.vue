@@ -1,24 +1,5 @@
-
 <template>
-
-  <section>
-    <h2>Welcome to Our Asian Cuisine Experience</h2>
-    <p>Discover the flavors of Asia at our restaurant. We offer a diverse menu of delicious and authentic dishes prepared with care and expertise.</p>
-    <a href="#" class="cta-button">Explore Our Menu</a>
-  </section>
-
-  <section>
-    <h2>Our Specialties</h2>
-    <p>Indulge in our exquisite Asian specialties crafted by our skilled chefs. From savory appetizers to delightful main courses, we have something for every palate.</p>
-  </section>
-
-  <section>
-    <h2>Visit Us Today</h2>
-    <p>Experience the rich and vibrant flavors of Asian cuisine. Visit our restaurant and embark on a culinary journey that will leave your taste buds delighted.</p>
-    <a href="#" class="cta-button">Make a Reservation</a>
-  </section>
-
-
+  <AboutUs/>
 </template>
 
 <style>
@@ -54,7 +35,7 @@ nav a:hover {
   background-color: #555;
 }
 
-section {
+.about-us-section {
   padding: 60px 20px;
   text-align: center;
   color: orange;
@@ -94,6 +75,8 @@ footer {
   text-align: center;
 }
 </style>
+
 <script setup>
 import Navigation from "@/App.vue";
+import AboutUs from "@/components/AboutUs.vue";
 </script>
