@@ -20,7 +20,7 @@ const router = createRouter({
 
     },
     {
-      path: "/order/:dishName/:price",
+      path: "/order/:dishName/:price/:quantity",
       name: 'order',
       component: OrderFormView,
       props: true,

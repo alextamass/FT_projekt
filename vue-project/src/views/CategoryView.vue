@@ -8,9 +8,17 @@
         <img :src="food.image" :alt="food.name" class="food-image">
         <h3 class="food-price">Price: {{ food.price }}</h3>
         <p class="food-description">{{ loremIpsum }}</p>
-        <router-link :to="{ name: 'order', params: { dishName: food.name, price: food.price } }" tag="button" class="order-button">
-          Place Order
-        </router-link>
+
+        <div class="order-section">
+          <div class="quantity-selector">
+            <label for="quantity" style="color: black">Quantity: </label>
+            <input type="number" id="quantity" v-model="food.quantity" min="1" placeholder="1">
+          </div>
+
+          <router-link :to="{ name: 'order', params: { dishName: food.name, price: food.price, quantity: food.quantity || 1 } }" tag="button" class="order-button">
+            Place Order
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -72,6 +80,22 @@ export default {
 .food-description {
   color: #666;
   margin-top: 8px;
+}
+
+.order-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quantity-selector {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+#quantity {
+  width: 40px;
+  text-align: center;
 }
 
 .order-button {

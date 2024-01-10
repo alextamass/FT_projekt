@@ -43,19 +43,5 @@ p {
   margin-bottom: 30px;
 }
 
-.cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
 
-.cta-button:hover {
-  text-decoration: underline;
-  background-color: #555;
-}
 </style>
