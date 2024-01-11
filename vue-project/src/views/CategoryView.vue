@@ -15,7 +15,7 @@
             <input type="number" id="quantity" v-model="food.quantity" min="1" placeholder="1">
           </div>
 
-          <router-link :to="{ name: 'order', params: { dishName: food.name, price: food.price, quantity: food.quantity || 1 } }" tag="button" class="order-button">
+          <router-link @click="order.addOrder(food.id)" :to="'/orderplaced'" tag="button" class="order-button">
             Place Order
           </router-link>
         </div>
@@ -26,6 +26,7 @@
 
 <script>
 import food from '../food.json';
+import {orders} from '../stores/orders.js'
 
 export default {
   computed: {
@@ -37,9 +38,10 @@ export default {
   data() {
     return {
       foods: food,
-      loremIpsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac facilisis odio. Nullam facilisis turpis quis risus ultricies, eget eleifend ligula cursus.'
+      loremIpsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac facilisis odio. Nullam facilisis turpis quis risus ultricies, eget eleifend ligula cursus.',
+      order: orders(),
     };
-  }
+  },
 }
 </script>
 
