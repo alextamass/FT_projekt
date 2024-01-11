@@ -9,7 +9,7 @@
       >
         <div class="order-details">
           <p class="order-name">{{ order.name }}</p>
-          <p class="order-price">{{ order.price }}</p>
+          <p class="order-price">{{ order.price }} €</p>
         </div>
         <img :src="order.image" alt="">
       </div>
@@ -74,6 +74,7 @@ export default {
     .order-price {
       color: black;
       font-size: 14px;
+      text-align: center;
     }
   }
 
