@@ -8,7 +8,6 @@
         class="nav-link"
     >{{ category.name }}</router-link>
     <router-link to="/orders" class="nav-link">View Orders</router-link>
-    <router-link to="/reservation" class="nav-link">Make reservation</router-link>
   </section>
 </template>
 
