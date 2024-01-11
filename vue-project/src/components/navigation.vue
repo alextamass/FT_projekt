@@ -7,7 +7,7 @@
         :to="{ name: 'category', params: { slug: category.slug } }"
         class="nav-link"
     >{{ category.name }}</router-link>
-    <router-link to="/make-reservation" class="nav-link">Make Reservation</router-link>
+    <router-link to="/orders" class="nav-link">View Orders</router-link>
   </section>
 </template>
 

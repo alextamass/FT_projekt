@@ -11,6 +11,9 @@ export const orders = defineStore('orders', {
     getProductId: (state) => (productId) => {
       return state.foods.find(food => food.id === productId);
     },
+    getOrders (){
+      return this.orders;
+    }
   },
   actions:{
     addOrder(productID){
