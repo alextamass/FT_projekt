@@ -10,11 +10,6 @@
         <p class="food-description">{{ loremIpsum }}</p>
 
         <div class="order-section">
-          <div class="quantity-selector">
-            <label for="quantity" style="color: black">Quantity: </label>
-            <input type="number" id="quantity" v-model="food.quantity" min="1" placeholder="1">
-          </div>
-
           <router-link @click="order.addOrder(food.id)" :to="'/orderplaced'" tag="button" class="order-button">
             Place Order
           </router-link>
@@ -26,14 +21,14 @@
 
 <script>
 import food from '../food.json';
-import {orders} from '../stores/orders.js'
+import { orders } from '../stores/orders.js';
 
 export default {
   computed: {
     selectedCategory() {
       const categorySlug = this.$route.params.slug;
       return this.foods.filter(food => food.category === categorySlug);
-    }
+    },
   },
   data() {
     return {
@@ -42,7 +37,7 @@ export default {
       order: orders(),
     };
   },
-}
+};
 </script>
 
 <style scoped>
@@ -86,18 +81,8 @@ export default {
 
 .order-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-}
-
-.quantity-selector {
-  margin-top: 8px;
-  margin-right: 10px;
-}
-
-#quantity {
-  width: 40px;
-  text-align: center;
 }
 
 .order-button {

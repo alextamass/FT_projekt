@@ -18,7 +18,7 @@
         </div>
 
         <div class="form-group">
-          <router-link v-if="isFormFilled" to="/orderplaced" tag="button" type="submit">
+          <router-link v-if="isFormFilled" to="x/orderplaced" tag="button" type="submit">
             Place Order
           </router-link>
           <button v-else type="button" disabled>
