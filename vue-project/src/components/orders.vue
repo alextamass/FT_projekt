@@ -12,6 +12,7 @@
           <p class="order-price">{{ order.price }} €</p>
         </div>
         <img :src="order.image" alt="">
+        <button @click="deleteOrder(orderIndex)">Remove Order</button>
       </div>
     </div>
   </div>
@@ -29,6 +30,11 @@ export default {
   computed: {
     showOrder() {
       return this.orders.getOrders;
+    },
+  },
+  methods: {
+    deleteOrder(index) {
+      this.orders.getOrders.splice(index, 1);
     },
   },
 };
